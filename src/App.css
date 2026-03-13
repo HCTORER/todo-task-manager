@@ -1,0 +1,267 @@
+.app-wrapper {
+  min-height: 100vh;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.light-mode {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #f8f9fa;
+}
+
+.stats-card,
+.progress-card {
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.light-mode .stats-card,
+.light-mode .progress-card {
+  background-color: #ffffff;
+  color: #212529;
+}
+
+.dark-mode .stats-card,
+.dark-mode .progress-card {
+  background-color: #1e1e1e;
+  color: #f8f9fa;
+}
+
+.dark-mode .text-muted {
+  color: #b0b0b0 !important;
+}
+
+.search-input {
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.dark-mode .search-input {
+  background-color: #1e1e1e;
+  color: #f8f9fa;
+  border-color: #444;
+}
+
+.dark-mode .search-input::placeholder {
+  color: #aaa;
+}
+
+.dark-mode .search-input:focus {
+  background-color: #1e1e1e;
+  color: #f8f9fa;
+  border-color: #888;
+  box-shadow: none;
+}
+
+.todo-input .form-control:focus {
+  box-shadow: none;
+  border-color: #0d6efd;
+}
+
+.todo-input .btn {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.todo-input .form-control {
+  border-right: none;
+}
+
+.dark-mode .todo-input .form-control {
+  background-color: #1e1e1e;
+  color: #f8f9fa;
+  border-color: #444;
+}
+
+.dark-mode .todo-input .form-control::placeholder {
+  color: #aaa;
+}
+
+.dark-mode .todo-input .btn.btn-primary {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.app-container {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.todo-card {
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.todo-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.dark-mode .todo-card {
+  background-color: #1e1e1e;
+  color: #f8f9fa;
+}
+
+.dark-mode .todo-card .text-muted {
+  color: #aaa !important;
+}
+
+.todo-card .badge {
+  font-size: 0.75rem;
+  padding: 6px 10px;
+  border-radius: 999px;
+}
+
+/* deadline badge */
+.deadline-badge {
+  font-weight: 600;
+}
+
+/* overdue task */
+.todo-card-overdue {
+  border-left: 4px solid #dc3545 !important;
+}
+
+.todo-card-overdue:hover {
+  box-shadow: 0 10px 24px rgba(220, 53, 69, 0.15);
+}
+
+/* today task */
+.todo-card-today {
+  border-left: 4px solid #f0ad4e !important;
+}
+
+.todo-card-today:hover {
+  box-shadow: 0 10px 24px rgba(240, 173, 78, 0.15);
+}
+
+/* soon task */
+.todo-card-soon {
+  border-left: 4px solid #0dcaf0 !important;
+}
+
+.todo-card-soon:hover {
+  box-shadow: 0 10px 24px rgba(13, 202, 240, 0.15);
+}
+
+.empty-state {
+  background-color: #ffffff;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.2s ease;
+}
+
+.empty-state-icon {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.dark-mode .empty-state {
+  background-color: #1e1e1e;
+  color: #f8f9fa;
+}
+
+.dark-mode .empty-state .text-muted {
+  color: #aaa !important;
+}
+
+.stats-card {
+  border-radius: 18px;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.stats-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
+}
+
+.stats-icon {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.stats-label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #6c757d;
+}
+
+.stats-value {
+  font-size: 2.1rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.stats-subtext {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.stats-card-total {
+  background: linear-gradient(
+    135deg,
+    rgba(13, 110, 253, 0.08),
+    rgba(13, 110, 253, 0.02)
+  );
+}
+
+.stats-card-active {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 193, 7, 0.12),
+    rgba(255, 193, 7, 0.03)
+  );
+}
+
+.stats-card-completed {
+  background: linear-gradient(
+    135deg,
+    rgba(25, 135, 84, 0.12),
+    rgba(25, 135, 84, 0.03)
+  );
+}
+
+.dark-mode .stats-label,
+.dark-mode .stats-subtext {
+  color: #b0b0b0;
+}
+
+.dark-mode .stats-card-total {
+  background: linear-gradient(
+    135deg,
+    rgba(13, 110, 253, 0.18),
+    rgba(13, 110, 253, 0.05)
+  );
+}
+
+.dark-mode .stats-card-active {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 193, 7, 0.18),
+    rgba(255, 193, 7, 0.05)
+  );
+}
+
+.dark-mode .stats-card-completed {
+  background: linear-gradient(
+    135deg,
+    rgba(25, 135, 84, 0.18),
+    rgba(25, 135, 84, 0.05)
+  );
+}
