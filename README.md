@@ -1,7 +1,6 @@
-# 📝 Todo Task Manager
+# 🚀 Todo Task Manager Dashboard
 
-Modern bir **Task Management Dashboard**.  
-React + TypeScript kullanılarak geliştirilmiştir.
+Modern task management dashboard built with React + TypeScript featuring smart sorting, priority system, deadline tracking and dark mode.
 
 ## 🚀 Özellikler
 
@@ -43,11 +42,15 @@ Aynı grupta:
 - CSS
 - LocalStorage
 
-## 📸 Screenshot
+## 📸 Screenshots
 
-Dashboard görünümü:
+### Light Mode
 
-_(buraya birazdan ekran görüntüsü koyacağız)_
+![Todo Task Manager Light Mode](./screenshots/dashboard-light.png)
+
+### Dark Mode
+
+![Todo Task Manager Dark Mode](./screenshots/dashboard-dark.png)
 
 ## 👨‍💻 Developer
 
